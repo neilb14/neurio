@@ -14,5 +14,5 @@ if(response.status_code != 200):
 data = response.json()
 for channel in data["channels"]:
     if(channel["type"] == "CONSUMPTION"):
-        print(channel["p_W"],"W")
+        print(data["timestamp"], " ", channel["p_W"],"W")
 
