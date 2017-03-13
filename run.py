@@ -11,5 +11,8 @@ if(response.status_code != 200):
     print("Error: response.code = ", response.status_code)
     raise InvalidResponseHttpStatusCode()
 
-print(response.json())
+data = response.json()
+for channel in data["channels"]:
+    if(channel["type"] == "CONSUMPTION"):
+        print(channel["p_W"],"W")
 
