@@ -30,3 +30,6 @@ def show(name):
     GPIO.output(ledRed,red)
     GPIO.output(ledGreen,green)
     GPIO.output(ledBlue,blue)
+
+def cleanup():
+    GPIO.cleanup()

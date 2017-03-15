@@ -18,7 +18,7 @@ for i in range(0,10):
     time.sleep(0.3)
 
 pi.show("off")
-GPIO.cleanup()
+pi.cleanup()
 print('Done Fancy LED')
 
 #R G B
