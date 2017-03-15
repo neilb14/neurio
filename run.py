@@ -20,6 +20,7 @@ def find_colour(power):
     for i, value in enumerate(steps):
         if(value >= power):
             return sequence[i]
+    return sequence[-1]
 
 response = requests.get(url)
 if(response.status_code != 200):
