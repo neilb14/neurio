@@ -1,10 +1,9 @@
 import os,sys,time,requests
 
-print(os.uname())
-
-import RPi.GPIO as GPIO
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
+if(os.uname()[4][:3] == "arm"):
+    import RPi.GPIO as GPIO
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
 
 colors = {
     "off":[1,1,1],
