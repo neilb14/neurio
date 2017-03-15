@@ -7,7 +7,7 @@ else:
     from led import fake
     led = fake
 
-sequence = ["off","white","yellow","green","turquoise","blue","violet","red"]
+sequence = ["off","white","turquoise","yellow","green","blue","violet","red"]
 steps = [0,140,250,500,700,1000,2000]
 
 if(len(sys.argv) < 2):
