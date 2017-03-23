@@ -10,8 +10,8 @@ These scripts are to drive a common anode RGB LED connected to a Raspberry Pi GP
 The run.py script takes a power reading from a Neurio home energy monitor (IP must be supplied as a command line argument) and then shows the following colours on the LED:
 + 0-140W = White (140W because my "phantom load" is sitting at 142W and I want to shave off another couple of Watts!)
 + 141-250W = Turqoise
-+ 251-500W = Yellow
-+ 501-700W = Green
++ 251-400W = Yellow
++ 401-700W = Green
 + 701-1000W = Blue 
 + 1001-2000W = Violet 
 + 2001+ = Red (hopefully we're not here for very long!)
