@@ -14,9 +14,9 @@ colours = {
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
-ledRed = 18
-ledGreen = 17
-ledBlue = 22
+ledRed = 22
+ledGreen = 18
+ledBlue = 17
 
 GPIO.setup(ledRed, GPIO.OUT)
 GPIO.setup(ledGreen, GPIO.OUT)
