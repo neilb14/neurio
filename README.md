@@ -3,9 +3,9 @@ This is a little home energy indicator that is an awesome way to trim excess Wat
 
 # The Details
 These scripts are to drive a common anode RGB LED connected to a Raspberry Pi GPIO pins as follows: 
-+ Red = 18
-+ Green = 17
-+ Blue = 22
++ Red = 22
++ Green = 18
++ Blue = 17
 
 The run.py script takes a power reading from a Neurio home energy monitor (IP must be supplied as a command line argument) and then shows the following colours on the LED:
 + 0-140W = White (140W because my "phantom load" is sitting at 142W and I want to shave off another couple of Watts!)
